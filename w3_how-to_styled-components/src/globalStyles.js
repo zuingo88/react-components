@@ -67,6 +67,18 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: ligthgrey;
   }
+
+  #screen {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pageContainer {
+    padding: 30px;
+    display: flex;
+  }
 `;
 
 export default GlobalStyle

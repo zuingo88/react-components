@@ -13,8 +13,6 @@ export const NavLink = styled(Link)`
 export const NavbarBar = styled.nav`
   width: 100%;
   min-height: 120px;
-  position: fixed;
-  top: 0;
 
   background-color: white;
   border-bottom: solid 2px black;
