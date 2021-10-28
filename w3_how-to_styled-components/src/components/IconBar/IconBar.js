@@ -9,7 +9,7 @@ import {
 import { GrMail } from "react-icons/gr";
 import { GiEarthAmerica } from "react-icons/gi";
 
-
+//  STYLE
 import {
   Vertical,
   VrBar,

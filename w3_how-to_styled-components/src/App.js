@@ -2,14 +2,12 @@
 import GlobalStyle from "./globalStyles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-//  REACT-ICONS
-// import { FaHome } from "react-icons/fa";
-
 //  NAVBAR
 import { Navbar } from './components';
 
 //  COMPONENTS
 import IconBar from "./components/IconBar/IconBar";
+import Table from "./components/Table/Table";
 
 
 
@@ -24,6 +22,7 @@ function App() {
           <Switch>
             <Route path='/' exact />
             <Route path='/iconbar' exact component={IconBar} />
+            <Route path='/table' exact component={Table} />
           </Switch>
         </div>
       </Router>

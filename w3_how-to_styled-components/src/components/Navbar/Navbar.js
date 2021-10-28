@@ -20,10 +20,10 @@ const Navbar = () => {
          <NavItem>
           <NavLink to='/iconbar'>IconBar</NavLink>
         </NavItem>
-        {/*
         <NavItem>
-          <NavLink to='/ae2'>AppEva2</NavLink>
+          <NavLink to='/table'>Table</NavLink>
         </NavItem>
+        {/*
         <NavItem>
           <NavLink to='/ae3'>AppEva3</NavLink>
         </NavItem>
