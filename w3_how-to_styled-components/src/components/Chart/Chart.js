@@ -13,7 +13,6 @@ import {
   dataBar,
   optionsBar,
   dataPolar,
-  rand,
   genDataDynamic,
   optionsDynamic
 } from './Chart.style';

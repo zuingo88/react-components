@@ -111,7 +111,6 @@ export const genDataDynamic = () => ({
       borderWidth: 3,
       borderRadius: 10,
       maxBarThickness: 30,
-      // minBarLength: 20,
     },
   ],
 });
@@ -128,7 +127,6 @@ export const optionsDynamic = {
       min: -10,
       max: 10,
       ticks: {
-        // forces step size to be 50 units
         stepSize: 1,
       }
     },
