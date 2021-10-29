@@ -90,7 +90,7 @@ export const genDataDynamic = () => ({
   labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
   datasets: [
     {
-      label: 'Scale',
+      label: 'Dati Dinamici',
       data: [rand(), rand(), rand(), rand(), rand(), rand()],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
@@ -109,18 +109,28 @@ export const genDataDynamic = () => ({
         'rgba(255, 159, 64, 1)',
       ],
       borderWidth: 3,
+      borderRadius: 10,
+      maxBarThickness: 30,
+      // minBarLength: 20,
     },
   ],
 });
 
 export const optionsDynamic = {
+  plugins: {
+    title: {
+      display: true,
+      text: 'Titolo'
+    }
+  },
   scales: {
-    yAxes: [
-      {
-        ticks: {
-          beginAtZero: true,
-        },
-      },
-    ],
+    y: {
+      min: -10,
+      max: 10,
+      ticks: {
+        // forces step size to be 50 units
+        stepSize: 1,
+      }
+    },
   },
 };
