@@ -16,7 +16,7 @@ import {
 
 const Table = () => {
   return (
-    <div id='pageContainer'>
+    <div id='pageContainer' style={{ flexWrap: 'wrap' }}>
       <MyTable>
         <MyThead>
           <tr style={{ backgroundColor: 'white' }}>

@@ -8,6 +8,7 @@ import { Navbar } from './components';
 //  COMPONENTS
 import IconBar from "./components/IconBar/IconBar";
 import Table from "./components/Table/Table";
+import Chart from './components/Chart/Chart'
 
 
 
@@ -23,6 +24,7 @@ function App() {
             <Route path='/' exact />
             <Route path='/iconbar' exact component={IconBar} />
             <Route path='/table' exact component={Table} />
+            <Route path='/chart' exact component={Chart} />
           </Switch>
         </div>
       </Router>

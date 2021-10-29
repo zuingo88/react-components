@@ -78,6 +78,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #pageContainer {
+    width: 100%;
     padding: 30px;
     display: flex;
   }

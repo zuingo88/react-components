@@ -27,10 +27,10 @@ const Navbar = () => {
         <NavItem>
           <NavLink to='/table'>Table</NavLink>
         </NavItem>
-        {/*
         <NavItem>
-          <NavLink to='/ae3'>AppEva3</NavLink>
+          <NavLink to='/chart'>Chart</NavLink>
         </NavItem>
+        {/*
         <NavItem>
           <NavLink to='/aea1'>AppEvaAdm1</NavLink>
         </NavItem>
