@@ -6,8 +6,12 @@ import {
   NavbarBar,
   Logo,
   NavList,
-  NavItem
+  NavItem, 
+  Hamburger
 } from './Navbar.style';
+
+//  ICONS
+import { HiMenu } from "react-icons/hi";
 
 const Navbar = () => {
   return (
@@ -46,6 +50,7 @@ const Navbar = () => {
           <NavLink to='/inprospectusaccept'>InProspectusAccept</NavLink>
         </NavItem> */}
       </NavList>
+      <Hamburger><HiMenu className='hamburger' /></Hamburger>
     </NavbarBar>
   )
 }

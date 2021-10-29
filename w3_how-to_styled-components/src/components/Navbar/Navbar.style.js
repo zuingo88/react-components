@@ -12,7 +12,8 @@ export const NavLink = styled(Link)`
 
 export const NavbarBar = styled.nav`
   width: 100%;
-  min-height: 120px;
+  height: 100px;
+  padding: 20px;
 
   background-color: white;
   border-bottom: solid 2px black;
@@ -26,14 +27,17 @@ export const NavbarBar = styled.nav`
 export const Logo = styled.img`
   width: 75px;
   height: auto;
-  padding: 5px;
+  margin-right: 20px;
+  padding: 10px;
 `
 
 export const NavList = styled.ul`
   list-style-type: none;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
+  flex-grow: 1;
 `
 
 export const NavItem = styled.li`
@@ -46,4 +50,19 @@ export const NavItem = styled.li`
   -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.5);
   -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.5);
   box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.5);
+`
+
+export const Hamburger = styled.div`
+  width: 100px;
+  height: 100%;
+  /* background-color: blue; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .hamburger {
+    width: 35px;
+    height: auto;
+  }
 `

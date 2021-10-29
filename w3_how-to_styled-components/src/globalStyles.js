@@ -70,6 +70,8 @@ const GlobalStyle = createGlobalStyle`
 
   #screen {
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
 
     display: flex;
     flex-direction: column;
