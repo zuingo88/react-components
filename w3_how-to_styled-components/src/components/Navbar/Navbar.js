@@ -33,10 +33,10 @@ const Navbar = () => {
         <NavItem>
           <NavLink to='/myslate'>MySlate</NavLink>
         </NavItem>
-        {/*
         <NavItem>
-          <NavLink to='/aea2'>AppEvaAdm2</NavLink>
+          <NavLink to='/myplate'>MyPlate</NavLink>
         </NavItem>
+        {/*
         <NavItem>
           <NavLink to='/login'>Login</NavLink>
         </NavItem>
