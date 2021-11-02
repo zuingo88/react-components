@@ -11,6 +11,7 @@ import Table from "./components/Table/Table";
 import Chart from './components/Chart/Chart';
 import MySlate from "./components/MySlate/MySlate";
 import MyPlate from './components/MyPlate/MyPlate';
+import MyCKEditor from "./components/MyCKEditor/MyCKEditor";
 
 
 
@@ -29,6 +30,7 @@ function App() {
             <Route path='/chart' exact component={Chart} />
             <Route path='/myslate' exact component={MySlate} />
             <Route path='/myplate' exact component={MyPlate} />
+            <Route path='/myckeditor' exact component={MyCKEditor} />
           </Switch>
         </div>
       </Router>

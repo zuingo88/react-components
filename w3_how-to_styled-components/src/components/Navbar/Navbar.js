@@ -36,10 +36,10 @@ const Navbar = () => {
         <NavItem>
           <NavLink to='/myplate'>MyPlate</NavLink>
         </NavItem>
-        {/*
         <NavItem>
-          <NavLink to='/login'>Login</NavLink>
+          <NavLink to='/myckeditor'>MyCKEditor</NavLink>
         </NavItem>
+        {/*
         <NavItem>
           <NavLink to='/aaa'>AppAskAdm</NavLink>
         </NavItem>
