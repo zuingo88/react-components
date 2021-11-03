@@ -1,5 +1,13 @@
 import styled from "styled-components"
 
 export const EditorContainer = styled.div`
-  margin: 15px;
+  width: 75%;
+  min-width: 200px;
+  max-width: 700px;
+  margin: 20px auto 0;
+
+  & ol, ul {
+  padding-left: 0;
+  list-style-position: inside;
+  }
 `
