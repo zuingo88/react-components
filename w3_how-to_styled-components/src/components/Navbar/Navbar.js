@@ -39,10 +39,10 @@ const Navbar = () => {
         <NavItem>
           <NavLink to='/myckeditor'>MyCKEditor</NavLink>
         </NavItem>
-        {/*
         <NavItem>
-          <NavLink to='/aaa'>AppAskAdm</NavLink>
+          <NavLink to='/styledsystem'>StyledSystem</NavLink>
         </NavItem>
+        {/*
         <NavItem>
           <NavLink to='/indeclaration'>InDeclaration</NavLink>
         </NavItem>

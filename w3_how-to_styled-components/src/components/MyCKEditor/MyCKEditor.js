@@ -55,6 +55,7 @@ const MyCKEditor = () => {
           data={text}
           onChange={(event, editor) => {
             const data = editor.getData();
+            console.log('EVENT: ', event, 'EDITOR: ', editor);
             setText(data)
           }}
         />

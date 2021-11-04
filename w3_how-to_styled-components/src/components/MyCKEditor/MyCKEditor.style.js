@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const EditorContainer = styled.div`
   width: 75%;
@@ -7,7 +7,7 @@ export const EditorContainer = styled.div`
   margin: 20px auto 0;
 
   & ol, ul {
-  padding-left: 0;
+  padding-left: 5px;
   list-style-position: inside;
   }
 `
