@@ -42,10 +42,10 @@ const Navbar = () => {
         <NavItem>
           <NavLink to='/styledsystem'>StyledSystem</NavLink>
         </NavItem>
-        {/*
         <NavItem>
-          <NavLink to='/indeclaration'>InDeclaration</NavLink>
+          <NavLink to='/myredux'>MyRedux</NavLink>
         </NavItem>
+        {/*
         <NavItem>
           <NavLink to='/inprospectusaccept'>InProspectusAccept</NavLink>
         </NavItem> */}

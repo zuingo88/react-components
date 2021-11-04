@@ -12,9 +12,8 @@ import Chart from './components/Chart/Chart';
 import MySlate from "./components/MySlate/MySlate";
 import MyPlate from './components/MyPlate/MyPlate';
 import MyCKEditor from "./components/MyCKEditor/MyCKEditor";
-import StyledSystem from './components/StyledSystem/StyledSystem'
-
-
+import StyledSystem from './components/StyledSystem/StyledSystem';
+import MyRedux from "./components/MyRedux/MyRedux";
 
 function App() {
   return (
@@ -33,6 +32,7 @@ function App() {
             <Route path='/myplate' exact component={MyPlate} />
             <Route path='/myckeditor' exact component={MyCKEditor} />
             <Route path='/styledsystem' exact component={StyledSystem} />
+            <Route path='/myredux' exact component={MyRedux} />
           </Switch>
         </div>
       </Router>
