@@ -1,9 +1,18 @@
 import React from 'react';
-import { Login, Button } from './MyRedux.style';
+import {
+  StateBar,
+  LoginBtn,
+  LogoutBtn,
+  LoginState,
+  Button,
+  ResetBtn
+} from './MyRedux.style';
 import {
   incrementa,
   decrementa,
-  log
+  reset,
+  login,
+  logout
 } from './actions';
 
 //  REDUX
@@ -28,22 +37,44 @@ const MyRedux = () => {
         alignItems: 'center'
       }}
     >
-      <div>
-        <Login
-          onClick={() => dispatch(log())}
+      <StateBar>
+        {
+          logged
+            ? <LogoutBtn onClick={() => dispatch(logout())}>Logout</LogoutBtn>
+            : <LoginBtn onClick={() => dispatch(login())}>Login</LoginBtn>
+        }
 
+
+        <LoginState
+          style={
+            !logged
+              ? { backgroundColor: 'crimson' }
+              : { backgroundColor: '#30B8AE' }
+          }
         >
-          {logged ? 'Logout' : 'Login'}
-        </Login>
-      </div>
+          {
+            logged
+              ? 'Sei Loggato'
+              : 'Non sei Loggato'
+          }
+        </LoginState>
+      </StateBar>
 
-      <div>
-        <h1>Counter: {counter}</h1>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Button onClick={() => dispatch(incrementa())}>+</Button>
-          <Button onClick={() => dispatch(decrementa())}>-</Button>
-        </div>
-      </div>
+      {/* {
+        logged ? */}
+          <div style={{ width: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <h1>Counter: {counter}</h1>
+
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <Button onClick={() => dispatch(decrementa())}>-</Button>
+              <Button onClick={() => dispatch(incrementa())}>+</Button>
+            </div>
+
+            <ResetBtn onClick={() => dispatch(reset())}>Reset Counter</ResetBtn>
+          </div>
+          {/* :
+          <p>Effettua il login!</p>
+      } */}
     </div>
   )
 }
