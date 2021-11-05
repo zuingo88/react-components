@@ -13,7 +13,7 @@ import MySlate from "./components/MySlate/MySlate";
 import MyPlate from './components/MyPlate/MyPlate';
 import MyCKEditor from "./components/MyCKEditor/MyCKEditor";
 import StyledSystem from './components/StyledSystem/StyledSystem';
-import MyRedux from "./components/MyRedux/MyRedux";
+import MyRedux from "./components/MyRedux/MyRedux.jsx";
 
 function App() {
   return (
