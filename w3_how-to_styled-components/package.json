@@ -63,6 +63,9 @@
   "devDependencies": {
     "@ckeditor/ckeditor5-alignment": "^31.0.0",
     "@types/faker": "^5.5.9",
-    "@types/styled-components": "^5.1.15"
+    "@types/styled-components": "^5.1.15",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
   }
 }

@@ -45,10 +45,9 @@ const Navbar = () => {
         <NavItem>
           <NavLink to='/myredux'>MyRedux</NavLink>
         </NavItem>
-        {/*
         <NavItem>
-          <NavLink to='/inprospectusaccept'>InProspectusAccept</NavLink>
-        </NavItem> */}
+          <NavLink to='/tailwindcomponent'>Tailwind</NavLink>
+        </NavItem>
       </NavList>
       <Hamburger><HiMenu className='hamburger' /></Hamburger>
     </NavbarBar>

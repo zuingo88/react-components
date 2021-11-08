@@ -14,6 +14,7 @@ import MyPlate from './components/MyPlate/MyPlate';
 import MyCKEditor from "./components/MyCKEditor/MyCKEditor";
 import StyledSystem from './components/StyledSystem/StyledSystem';
 import MyRedux from "./components/MyRedux/MyRedux.jsx";
+import TailwindComponent from "./components/TailwindComponent/TailwindComponent";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path='/myckeditor' exact component={MyCKEditor} />
             <Route path='/styledsystem' exact component={StyledSystem} />
             <Route path='/myredux' exact component={MyRedux} />
+            <Route path='/tailwindcomponent' exact component={TailwindComponent} />
           </Switch>
         </div>
       </Router>
