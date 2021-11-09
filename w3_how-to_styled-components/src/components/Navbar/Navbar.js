@@ -1,27 +1,39 @@
-import React from 'react';
-import logo from '../../logo.png'
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
+import logo from '../../logo.png';
+// import { Link } from 'react-router-dom';
+import { links } from './links';
+import "tailwindcss/tailwind.css";
+
 import {
   NavLink,
+  NavLinks,
   NavbarBar,
   Logo,
   NavList,
   NavItem,
-  Hamburger
+  Hamburger,
+  DropDown,
+  DropDownUl,
+  DropDownLi
 } from './Navbar.style';
 
 //  ICONS
 import { HiMenu } from "react-icons/hi";
-import { FaExternalLinkSquareAlt } from 'react-icons/fa';
+// // import { FaExternalLinkSquareAlt } from 'react-icons/fa';
 
 const Navbar = () => {
+
+  const [show, setShow] = useState(false);
+
   return (
     <NavbarBar style={{ fontSize: '20px' }}>
-      <NavLink to='/'>
+
+      <NavLink to='/'
+      className='xs:flex-grow lg:flex-grow-0 '>
         <Logo src={logo} alt="logo" />
       </NavLink>
 
-      <NavList>
+      {/* <NavList>
         <NavItem>
           <NavLink to='/iconbar'>IconBar</NavLink>
         </NavItem>
@@ -49,21 +61,45 @@ const Navbar = () => {
         <NavItem>
           <NavLink to='/tailwindcomponent'>Tailwind</NavLink>
         </NavItem>
-      </NavList>
+      </NavList> */}
 
       <NavList>
-        {/* {
+        {
           links.map(el => {
-            <NavItem key={el.id}>
-              <a href={el.url} alt={el.text}>
-                {el.text}
-              </a>
-            </NavItem>
+            return (
+              <NavItem key={el.id}>
+                <NavLinks href={el.url} alt={el.text}>
+                  {el.text}
+                </NavLinks>
+              </NavItem>
+            )
           })
-        } */}
+        }
       </NavList>
 
-      <Hamburger><HiMenu className='hamburger' /></Hamburger>
+      <Hamburger onClick={() => setShow(!show)}>
+        <HiMenu className='hamburger' />
+
+        <DropDown className={`${show ? 'show' : ''}`}>
+          {/* lista links */}
+          <DropDownUl>
+            {
+              links.map(el => {
+                return (
+                  <NavItem key={el.id}>
+                    <NavLinks href={el.url} alt={el.text}>
+                      {el.text}
+                    </NavLinks>
+                  </NavItem>
+                )
+              })
+            }
+            {/* <DropDownLi>
+
+            </DropDownLi> */}
+          </DropDownUl>
+        </DropDown>
+      </Hamburger>
     </NavbarBar>
   )
 }

@@ -83,7 +83,11 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-wrap: wrap;
   }
-`;
 
-export default GlobalStyle
+  .show {
+    visibility: visible;
+  }
+`
+
+export default GlobalStyle;
 
