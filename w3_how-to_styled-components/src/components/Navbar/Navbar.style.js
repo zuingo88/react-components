@@ -66,4 +66,8 @@ export const Hamburger = styled.div`
     width: 35px;
     height: auto;
   }
+
+  @media all and (min-width: 768px) {
+    display: none
+  }
 `

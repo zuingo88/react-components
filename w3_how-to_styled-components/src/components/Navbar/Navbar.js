@@ -6,12 +6,13 @@ import {
   NavbarBar,
   Logo,
   NavList,
-  NavItem, 
+  NavItem,
   Hamburger
 } from './Navbar.style';
 
 //  ICONS
 import { HiMenu } from "react-icons/hi";
+import { FaExternalLinkSquareAlt } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
@@ -21,7 +22,7 @@ const Navbar = () => {
       </NavLink>
 
       <NavList>
-         <NavItem>
+        <NavItem>
           <NavLink to='/iconbar'>IconBar</NavLink>
         </NavItem>
         <NavItem>
@@ -49,6 +50,19 @@ const Navbar = () => {
           <NavLink to='/tailwindcomponent'>Tailwind</NavLink>
         </NavItem>
       </NavList>
+
+      <NavList>
+        {/* {
+          links.map(el => {
+            <NavItem key={el.id}>
+              <a href={el.url} alt={el.text}>
+                {el.text}
+              </a>
+            </NavItem>
+          })
+        } */}
+      </NavList>
+
       <Hamburger><HiMenu className='hamburger' /></Hamburger>
     </NavbarBar>
   )
