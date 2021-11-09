@@ -25,6 +25,7 @@ export const NavbarBar = styled.nav`
 `
 
 export const Logo = styled.img`
+  all: unset;
   width: 75px;
   height: auto;
   margin-right: 20px;
