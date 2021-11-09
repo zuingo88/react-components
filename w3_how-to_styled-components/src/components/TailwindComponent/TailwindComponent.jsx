@@ -9,7 +9,7 @@ const TailwindComponent = () => {
           <div className="text-xl font-medium text-primary">ChitChat</div>
           <p className="text-blue-450">You have a new message!</p>
         </div>
-        <TailwindCSSButton>ciao</TailwindCSSButton>
+        <TailwindCSSButton>Test</TailwindCSSButton>
       </div>
     </div>
   )
