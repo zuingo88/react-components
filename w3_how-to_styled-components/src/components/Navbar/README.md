@@ -1,4 +1,4 @@
-#Navbar Component
+# Navbar Component
 
 ![Alt text](./Navbar.png?raw=true "screenshot")
 
