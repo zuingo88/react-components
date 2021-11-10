@@ -118,6 +118,12 @@ export const DropDown = styled.div`
   box-shadow:         -3px 4px 5px 0px rgba(50, 50, 50, 0.75);
 
   visibility: hidden;
+  opacity: 0;
+  /* height: auto;
+  max-height: 0; */
+
+  transition: opacity 0.3s ease-in;
+              /* max-height 0.3s; */
 `
 
 export const DropDownUl = styled.ul`

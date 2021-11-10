@@ -86,6 +86,8 @@ const GlobalStyle = createGlobalStyle`
 
   .show {
     visibility: visible;
+    opacity: 1;
+    /* max-height: 1000px; */
   }
 `
 

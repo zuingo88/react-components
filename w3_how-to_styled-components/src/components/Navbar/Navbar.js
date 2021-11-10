@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import useOnClickOutside from './useOnCLickOutside';
 import logo from '../../logo.png';
 // import { Link } from 'react-router-dom';
 import { links } from './links';
@@ -23,7 +24,13 @@ import { HiMenu } from "react-icons/hi";
 
 const Navbar = () => {
 
+  //  Creo un ref che aggiungerò all'elemento al di fuori del quale voglio 'sentire' il click.
+  const ref = useRef();
+  
+  //  State del mio DropDown. 
   const [show, setShow] = useState(false);
+
+  useOnClickOutside(ref, () => setShow(false));
 
   return (
     <NavbarBar style={{ fontSize: '20px' }}>
@@ -80,7 +87,7 @@ const Navbar = () => {
       <Hamburger onClick={() => setShow(!show)}>
         <HiMenu className='hamburger' />
 
-        <DropDown className={`${show ? 'show' : ''}`}>
+        <DropDown className={`${show ? 'show' : ''}`} ref={ref}>
           {/* lista links */}
           <DropDownUl>
             {
@@ -94,9 +101,6 @@ const Navbar = () => {
                 )
               })
             }
-            {/* <DropDownLi>
-
-            </DropDownLi> */}
           </DropDownUl>
         </DropDown>
       </Hamburger>
