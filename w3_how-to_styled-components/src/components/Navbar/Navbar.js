@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import useOnClickOutside from './useOnCLickOutside';
 import logo from '../../logo.png';
-// import { Link } from 'react-router-dom';
 import { links } from './links';
 import "tailwindcss/tailwind.css";
 
@@ -15,12 +14,10 @@ import {
   Hamburger,
   DropDown,
   DropDownUl,
-  DropDownLi
 } from './Navbar.style';
 
 //  ICONS
 import { HiMenu } from "react-icons/hi";
-// // import { FaExternalLinkSquareAlt } from 'react-icons/fa';
 
 const Navbar = () => {
 
@@ -40,6 +37,7 @@ const Navbar = () => {
         <Logo src={logo} alt="logo" />
       </NavLink>
 
+      {/* METODO 1 */}
       {/* <NavList>
         <NavItem>
           <NavLink to='/iconbar'>IconBar</NavLink>
@@ -70,6 +68,7 @@ const Navbar = () => {
         </NavItem>
       </NavList> */}
 
+      {/* METODO 2 */}
       <NavList>
         {
           links.map(el => {
